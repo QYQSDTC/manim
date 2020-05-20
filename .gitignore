@@ -1,4 +1,6 @@
 *.pyc
+.python-version
+.history/
 *.bak
 .DS_Store
 homeless.py

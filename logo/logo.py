@@ -173,4 +173,10 @@ class Thumbnail(GraphScene):
         manim = TextMobject("Manim").set_height(1.5) \
                                     .next_to(picture, RIGHT) \
                                     .shift(DOWN * 0.7)
+        subtext = TextMobject("Mathematical Animation Engine").to_edge(DOWN) \
+            .scale(1.5)
         self.add(manim)
+        self.play(
+            ShowCreation(manim),
+            ShowCreation(subtext)
+        )
